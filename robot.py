@@ -12,18 +12,12 @@ class Robot(QGraphicsPixmapItem):
         self.picture = QPixmap("resources/robot.png")
         self.height = self.picture.height()
         self.width = self.picture.width()
-        print self.height, self.width
+
         self.setPixmap(self.picture)
         self.setScale(0.5)
         self.setTransformOriginPoint(29, 25)
 
-        self.current_rotation = 0
-
         self.items_found = []
-
-    def increment_rotation(self):
-        self.current_rotation += 1
-        self.setRotation(self.current_rotation)
 
     def get_nearest(self, items):
         #find closest
