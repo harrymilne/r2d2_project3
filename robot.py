@@ -29,12 +29,12 @@ class Robot(QGraphicsPixmapItem):
             print(h_list)
         max_h = min(h_list)
         closest_i = dict(zip(h_list, items))[max_h]
-        print closest_i.type
         return closest_i
 
     def orientate(self):
         items = self.scene.items()
         items.remove(self)
+        print items
         item = self.get_nearest(items)
         x1, y1 = self.x(), self.y()
         x2, y2 = item.x(), item.y()
@@ -95,9 +95,3 @@ class Robot(QGraphicsPixmapItem):
             self.order_items()
             self.place_items()
             self.scene.timer.stop()
-
-
-
-
-
-

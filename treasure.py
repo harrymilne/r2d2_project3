@@ -16,3 +16,4 @@ class Treasure(QGraphicsPixmapItem):
         self.width = self.picture.width()
         self.setPixmap(self.picture)
         self.setScale(0.25)
+        

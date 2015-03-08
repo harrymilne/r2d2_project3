@@ -14,8 +14,6 @@ class MainWindow(QMainWindow):
         self.field = Field(800, 400)
         field_gv = QGraphicsView()
         field_gv.setScene(self.field)
-        #field_gv.setFixedHeight(400)
-        #field_gv.setFixedWidth(800)
 
         self.layout = QVBoxLayout()
         self.layout.addWidget(field_gv)

@@ -43,4 +43,3 @@ class Field(QGraphicsScene):
                 rand_y = randint(50, self.xy[1]-50)
                 t.setPos(rand_x, rand_y)
         pass
-
